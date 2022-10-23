@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+/*
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+font-family: 'Neucha', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+font-family: 'Press Start 2P', cursive;
+*/
+
+body{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: #fff;
+    background-color: #433f47;
+}
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+.header{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 10px;
+	background-color: rgb(18, 18, 21);
+	z-index: 100;
+	text-align: center;
+}
+.header__container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.header__container > :not(:last-child){
+	margin-bottom: 10px;
+}
+
+.header__title{
+	color: #fff;
+	font-size: 30px;
+	letter-spacing: 1.5px;
+	display: inline-block;
+} 
+
+.header__title-list{
+	display: block;
+	margin: 0 auto;
+	font-size: 20px;
+	color: #fff;
+	display: inline-block;
+	padding: 5px 30px 5px 5px;
+	position: relative;
+}
+
+.header__title-list:hover{
+	text-shadow: 0 0 10px rgba(111, 234, 238, 0.855);
+}
+
+.header__title-list::before,
+.header__title-list::after{
+	content:"";
+	position: absolute;
+	width: 18px;
+	height: 2px;
+	background-color: #fff;
+	transition: all 0.3s ease 0s;
+	border-radius: 2px;
+}
+
+.header__title-list::before{
+	top: 17px;
+	right: 0;
+	transform: rotate(45deg);
+}
+
+.header__title-list::after {
+	top: 17px;
+	right: -12px;
+	transform: rotate(-45deg);
+}
+
+.header__title-list:hover::before {
+	text-shadow: 0 0 10px rgb(111, 234, 238);
+	transform: rotate(-45deg);
+}
+
+.header__title-list:hover::after {
+	text-shadow: 0 0 10px rgb(111, 234, 238);
+	transform: rotate(45deg);
+}
+
+.header__list:hover .sub-menu{
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+.sub-menu {
+	text-align: left;
+	background-color: #77608d;
+	padding: 15px;
+	position: absolute;
+	min-width: 180px;
+	top: 130%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease 0s;
+}
+
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.sub-menu__item{
+	text-shadow: none;
+	font-size: 20px;
+	color: #fff;
+}
+
+.sub-menu__item:hover{
+	text-shadow: 0 0 10px rgba(111, 234, 238, 0.855);
+	text-decoration: underline;
+}
+
+
+.page {
+	padding: 120px 20px 200px;
+}
+.page__container {
+}
+.page__field {
+	margin: 0 auto;
+}
+.field {
+	font-size: 0px;
+	width: 600px;
+	height: 600px;
+	background: #fff;
+	box-shadow: 0 0 30px #000;
+	position: relative;
+}
+.field__body {
+}
+.field__block {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	outline: 2px solid black;
+	position: relative;
+}
+.field__image {
+
+}
+.field__image  img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+}
+
+.field__item-block{
+	width: 100%;
+	height: 100%;
+	background: #7540aa;
+	box-shadow: 0px 0px 10px #000;
+	transition: all 0.7s ease 0s;
+	position: relative;
+	z-index: 2;
+}
+/*
+.field__block--1:hover .field__item-block {
+	transform: translate(100%, 100%);
+}
+
+.field__block--2:hover .field__item-block{
+	transform-origin: 0 0;
+	transform: scale(0);
+}
+
+.field__block--3:hover .field__item-block{
+	transform-origin: top right;
+	transform: rotate(-180deg);
+}
+
+.field__block--4{
+	perspective: 900px;
+	perspective-origin: bottom right;
+}
+
+.field__block--4:hover .field__item-block{
+	transform-origin: left;
+	transform: rotateY(-90deg);
+}
+
+.field__block--5:hover .field__item-block{
+	transform: skewX(90deg);
+}
+
+.field__block--6:hover .field__item-block{
+	transform-origin: bottom right;
+	transform: scale(0.2, 0.2)  translate(100%, 100%) rotate3d(1, 1, 1, 360deg);
+}
+
+
+.field__block--7:hover .field__item-block{
+	transform: scaleX(0);
+}
+
+
+
+.field__block--8:hover .field__item-block{
+	transform-origin: bottom left;
+	transform: rotate3d(10, 7, 6, 100deg) rotateY(360deg);
+}
+
+
+.field__block--9{
+	perspective: 800px;
+	perspective-origin: 0 0;
+}
+
+.field__block--9:hover .field__item-block{
+	transform-origin: bottom;
+	transform: rotateX(-90deg);
+}
+
+*/
+
+
+.field__block--1:hover .field__item-block {
+	transform: translate(100%, 100%);
+}
+
+.field__block--2:hover .field__item-block{
+	transform-origin: 0 0;
+	transform: scale(0);
+}
+
+.field__block--1:hover ~ .field__block--3 > .field__item-block{
+	transform-origin: top right;
+	transform: rotate(-180deg);
+}
+
+.field__block--3:hover .field__item-block{
+	transform-origin: top left;
+	transform: rotate(-180deg);
+}
+
+
+.field__block--4{
+	perspective: 900px;
+	perspective-origin: bottom right;
+}
+
+.field__block--4:hover .field__item-block{
+	transform-origin: left;
+	transform: rotateY(-90deg);
+}
+
+.field__block--1:hover ~ .field__block--5 > .field__item-block{
+	transform: skewX(90deg);
+}
+
+.field__block--6:hover .field__item-block{
+	transform-origin: bottom right;
+	transform: scale(0.2, 0.2)  translate(100%, 100%) rotate3d(1, 1, 1, 360deg);
+}
+
+
+.field__block--2:hover ~ .field__block--7 > .field__item-block{
+	transform: scaleX(0);
+}
+
+.field__block--7:hover ~ .field__block--9 > .field__item-block{
+	transform: scaleY(0);
+}
+
+.field__block--7:hover .field__item-block{
+	transform: scaleX(0);
+}
+
+
+.field__block--4:hover ~ .field__block--8 > .field__item-block{
+	transform-origin: bottom left;
+	transform: rotate3d(10, 7, 6, 100deg) rotateY(360deg);
+}
+
+.field__block--8:hover .field__item-block{
+	transform-origin: bottom;
+	transform: rotate(-180deg);
+}
+
+.field__block--9{
+	perspective: 800px;
+	perspective-origin: 0 0;
+}
+
+.field__block--9:hover .field__item-block{
+	transform-origin: bottom;
+	transform: rotateX(-90deg);
+}
+
+
+.field__block--5:hover .field__item-block{
+		width: 600px;
+		height: 600px;
+		transform: rotate3d(1, 1, 1, 720deg);
+		position: absolute;
+		top: -100%;
+		left: -100%;
+		z-index: 5;
+		background: url('../img/photo.jpg') 0 0 / cover no-repeat;
+		transition: all 0.5s ease 0s;
+}
+
+
+.field__text{
+	display:none;
+}
+
+.field__block--5:hover .field__text{
+	display: inline-block;
+	transform: scale(1);
+	width: 200px;
+	height: 150px;
+	background: url(../img/cloud.png) 0 0 / cover no-repeat;	
+	position: absolute;
+	top: -200px;
+	right: -170px;
+	z-index: 10;
+	transition: all 0.5s ease 0s;
+}
+
+.field__text p{
+	position: relative;
+	text-align: center;
+	top: 30px;
+	width: 90%;
+	font-size: 27px;
+	color: #000;
+}
+
+
+
+
+
